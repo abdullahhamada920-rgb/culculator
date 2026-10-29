@@ -22,7 +22,17 @@ input {
     padding: 10px;
     box-sizing: border-box;
 }
+.container {
+    display: flex;
+    flex-direction: column; /* يخلي الحاجة تحت بعضها */
+    align-items: center;
+    gap: 15px;
+}
 
+.container p {
+    color: #aaa; /* لون رمادي للكلام */
+    font-size: 14px;
+}
 .calculator {
     width: 400px;
     padding: 20px;
