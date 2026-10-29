@@ -1,0 +1,71 @@
+
+/* 1. نجهز الصفحة كلها */
+body {
+    display: flex;
+    justify-content: center; /* يوسطن الحاسبة في نص الشاشة */
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff; /* خلفية سوداء شيك */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* 2. شكل الحاسبة نفسها */
+.calculator {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: min(320px, calc(100vw - 40px));
+}
+
+/* 3. شاشة العرض */
+input {
+    width: 100%;
+    height: 60px;
+    background-color: #c1c3c1;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: right; /* الأرقام على اليمين زي الحاسبة الحقيقية */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* 4. شبكة الأزرار (Grid) */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 أعمدة متساوية */
+    gap: 10px; /* مسافة بين الأزرار */
+}
+
+/* 5. شكل الأزرار */
+button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #ff8c00; /* لون EM البرتقالي لما تقف عليه */
+    color: white;
+}
+
+button.operator {
+    background-color: #666;
+}
+
+button.clear {
+    background-color: #a33;
+}
+
+button.equals {
+    grid-column: span 4;
+    background-color: #ff8c00;
+}
