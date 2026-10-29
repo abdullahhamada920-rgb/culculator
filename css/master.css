@@ -9,16 +9,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
-
-/* 2. شكل الحاسبة نفسها */
-.calculator {
-    background-color: #000000;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    width: min(320px, calc(100vw - 40px));
-}
-
 /* 3. شاشة العرض */
 input {
     width: 100%;
@@ -33,6 +23,13 @@ input {
     box-sizing: border-box;
 }
 
+.calculator {
+    width: 400px;
+    padding: 20px;
+    background-color: #222; /* خلفية الحاسبة */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
 /* 4. شبكة الأزرار (Grid) */
 .buttons {
     display: grid;
